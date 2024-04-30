@@ -3,13 +3,13 @@
 
 ## Задание 1
 
-- ![scrinshot](https://github.com/Evgenii-379/12-04.md/blob/main/Снимок%20экрана%202024-04-24%20171535.png)
+- ![scrinshot](https://github.com/Evgenii-379/12-04.md/blob/main/Снимок%20экрана%202024-04-29%20193912.png)
 
 
 ## Задание 2
 
-- ![scrinshot](https://github.com/Evgenii-379/12-04.md/blob/main/Снимок%20экрана%202024-04-26%20115529.png)
-- ![scrinshot](https://github.com/Evgenii-379/12-04.md/blob/main/Снимок%20экрана%202024-04-26%20120518.png)
+- ![scrinshot](https://github.com/Evgenii-379/12-04.md/blob/main/Снимок%20экрана%202024-04-30%20121205.png)
+- ![scrinshot](https://github.com/Evgenii-379/12-04.md/blob/main/Снимок%20экрана%202024-04-30%20121223.png)
 
 
 ## Задание 3
