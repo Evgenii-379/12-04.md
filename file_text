@@ -1,2 +1,25 @@
-
+Задание 1
+ 
+SELECT store.store_id, CONCAT(staff.first_name,' ', staff.last_name) AS staff, city.city, SUM(customer.customer_id)
+FROM store
+JOIN staff ON store.store_id=staff.store_id
+JOIN customer ON store.store_id=customer.store_id
+JOIN address ON store.address_id=address.address_id
+JOIN city ON address.city_id=city.city_id
+GROUP BY store_id, staff_id;
+ 
+Задание 2
+ 
+SELECT SUM(film.film_id)
+FROM film
+WHERE length >
+(SELECT AVG(length)
+FROM film);
+ 
+Задание 3
+ 
+SELECT SUM(payment_id), SUM(rental.rental_id), YEAR(payment_date), MONTH(payment_date)
+FROM payment
+INNER JOIN rental ON rental.rental_id=payment.rental_id
+GROUP BY MONTH(payment_date), YEAR(payment_date);
 
