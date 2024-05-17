@@ -1,1 +1,33 @@
-
+Задание 1
+ 
+SELECT store.store_id, CONCAT(staff.first_name,' ', staff.last_name) AS staff, city.city, COUNT(customer.customer_id)
+FROM store
+JOIN staff ON store.store_id=staff.store_id
+JOIN customer ON store.store_id=customer.store_id
+JOIN address ON store.address_id=address.address_id
+JOIN city ON address.city_id=city.city_id
+GROUP BY store_id, staff_id
+HAVING COUNT(customer.customer_id) > 300;
+ 
+ 
+ 
+Задание 2
+ 
+SELECT COUNT(film.film_id)
+FROM film
+WHERE film.length >
+(SELECT AVG(film.length)
+FROM film
+);
+ 
+Задание 3
+ 
+SELECT SUM(payment_id) AS payment,
+COUNT(rental.rental_id) AS rental,
+YEAR(payment_date) AS YEAR,
+MONTH(payment_date) AS MONTH
+FROM payment
+INNER JOIN rental ON rental.rental_id=payment.rental_id
+GROUP BY MONTH, YEAR
+ORDER BY SUM(payment_id) DESC
+LIMIT 1;
